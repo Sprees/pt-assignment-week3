@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thru-Hiking: Triple Trown</title>
+  </head>
+  <body>
+    <nav id="top">
+      <a href="index.html">Home</a>
+      <a href="pct.html">Pacific Crest Trail</a>
+      <a href="ct.html">Continental Divide Trail</a>
+      <a href="at.html">Appalachian Trail</a>
+      <a href="gear.html">Recommended Gear</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+    <header>
+      <h1>Thru-Hiking: Triple Crown</h1>
+      <div class="header-images">
+          <img
+            width="300"
+            src="images/pct-logo.svg"
+            alt="Pacific Crest Trail Logo"
+          />
+          <img
+          width="300"
+          src="images/ct-logo.png"
+          alt="Continental Divide Trail Logo"
+          />
+          <img
+          width="300"
+          src="images/at-logo.png"
+          alt="Appalachian Trail Logo"
+        />
+      </div>
+    </header>
+    <!-- Horizontal Break to split up the Heading and Main content of the page -->
+    
+
+    <main>
+      <section>
+        <h2>What is Thru-hiking?</h2>
+        <p>
+          Thru-hiking, or through-hiking, is the act of hiking an established
+          long-distance trail end-to-end continuously.
+        </p>
+        <p>
+          Completing a thru-hike is an exciting and challenging goal for many
+          outdoor adventurers. Spending months on a trail hiking thousands of
+          miles is an incredible and life-changing feat.
+        </p>
+        <p>
+          here are three main thru-hiking trails in the United States that
+          long-distance hikers dream about: the
+          <strong><a href="at.html">Appalachian Trail (AT)</a></strong> in the
+          East, the
+          <strong><a href="ct.html">Continental Divide Trail (CDT)</a></strong>
+          in the Mountain West, and the
+          <strong><a href="pct.html">Pacific Crest Trail (PCT)</a></strong> in
+          the West.
+        </p>
+      </section>
+      <section>
+        <h2>What is the Triple Crown of Thru-hiking?</h2>
+        <p>
+          The Triple Crown of Thru-Hiking refers to completing the
+          <strong>Appalachian Trail</strong>, the
+          <strong>Continental Divide Trail</strong>, and the
+          <strong>Pacific Crest Trail</strong>. The special hikers who finish
+          all three big trails are referred to as a Triple Crowner. It takes a
+          lot of time, planning, and fortitude to be successful in this special
+          undertaking—a total of 7,700+ miles.
+        </p>
+      </section>
+      <section>
+        <h2>Triple Crown Trail Information</h2>
+        <!-- Although the <table> border and cellpadding attributes are depricated, I've decided to use it here for better clarity without the use of CSS -->
+        <div id="table-container">
+          <table>
+            <!-- Define Table column Headers -->
+            <thead>
+              <!-- All headers are inside a single row -->
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Route Image</th>
+                <th scope="col">States on Route</th>
+                <th scope="col">Length</th>
+              </tr>
+            </thead>
+            <!-- Define the body of the table, each row having data for each corresponding header -->
+            <tbody>
+              <tr>
+                <!-- I've used a table header for bold text, as the name of the trail is important and all data in this row relates to it -->
+                <th scope="row">Pacific Crest Trail</th>
+                <td>
+                  <img
+                    src="images/Map_of_Pacific_Crest_Trail.png"
+                    alt="Map of the Pacific Crest Trail"
+                    width="200"
+                  />
+                </td>
+                <td class="td-states">
+                  California 
+                  Oregon 
+                  Washington
+                </td>
+                <td>2,650 mi 4,260 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Continental Divide Trail</th>
+                <td>
+                  <img
+                    src="images/Map_of_Continental_Divide_Trail.png"
+                    alt="Map of the Continental Divide Trail"
+                    width="200"
+                  />
+                </td>
+                <td class="td-states">
+                  New Mexico 
+                  Colorado Wyoming 
+                  Idaho 
+                  Montana
+                </td>
+                <td>3,200 mi 5,150 km</td>
+              </tr>
+              <tr>
+                <th scope="row">Appalachian Trail</th>
+                <td>
+                  <img
+                    src="images/Map_of_Appalachian_Trail.png"
+                    alt="Map of the Appalachian Trail"
+                    width="200"
+                  />
+                </td>
+                <td class="td-states">
+                  Georgia 
+                  North Carolina 
+                  Tennessee 
+                  Virginia 
+                  West Virginia 
+                  Maryland
+                  Pennsylvania
+                  New Jersey 
+                  New York 
+                  Connecticut 
+                  Massachusetts
+                  Vermont 
+                  New Hampshire 
+                  Maine
+                </td>
+                <td>2,189 mi 3,520 km</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Horizontal Break to split up the Main content from Newsletter form -->
+      
+      <!-- added id to newsletter section for newsletter link in nav -->
+      <section id="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <form action="" name="newsletter">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" />
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" />
+          <input type="submit" id="submit" />
+        </form>
+
+        <!-- #top refers to nav element at the top of the page -->
+        <a id="link-to-top" href="#top">Back to top</a>
+      </section>
+    </main>
+    <!-- Horizontal Break to split up the newsletter form from Footer -->
+    
+
+    <footer>
+      <p>Content Credit:</p>
+      <a href="https://en.wikipedia.org/wiki/Continental_Divide_Trail"
+        >Wikipedia: Continental Divide Trail</a
+      >
+
+      <a href="https://en.wikipedia.org/wiki/Appalachian_Trail"
+        >Wikipedia: Appalachian Trail</a
+      >
+
+      <a href="https://en.wikipedia.org/wiki/Pacific_Crest_Trail"
+        >Wikipedia: Pacific Crest Trail</a
+      >
+
+      <a href="https://en.wikipedia.org/wiki/Triple_Crown_of_Hiking"
+        >Wikipedia: Triple Crown of Hiking</a
+      >
+
+      <a
+        href="https://www.rei.com/learn/expert-advice/backpacking-checklist.html"
+        >REI: Backpacking Checklist</a
+      >
+    </footer>
+  </body>
+</html>
