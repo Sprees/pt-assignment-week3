@@ -4,17 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Appalachian Trail</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
   </head>
   <body>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="pct.html">Pacific Crest Trail</a>
-      <a href="ct.html">Continental Divide Trail</a>
-      <a href="at.html">Appalachian Trail</a>
-      <a href="gear.html">Recommended Gear</a>
-      <a href="#newsletter">Newsletter</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pct.html">Pacific Crest Trail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ct.html">Continental Divide Trail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Appalachian Trail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gear.html">Recommended Gear</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <header>

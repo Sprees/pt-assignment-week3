@@ -4,175 +4,201 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thru-Hiking: Triple Trown</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
   </head>
   <body>
-    <nav id="top">
-      <a href="index.html">Home</a>
-      <a href="pct.html">Pacific Crest Trail</a>
-      <a href="ct.html">Continental Divide Trail</a>
-      <a href="at.html">Appalachian Trail</a>
-      <a href="gear.html">Recommended Gear</a>
-      <a href="#newsletter">Newsletter</a>
-    </nav>
-    <header>
-      <h1>Thru-Hiking: Triple Crown</h1>
-      <div class="header-images">
-          <img
-            width="300"
-            src="images/pct-logo.svg"
-            alt="Pacific Crest Trail Logo"
-          />
-          <img
-          width="300"
-          src="images/ct-logo.png"
-          alt="Continental Divide Trail Logo"
-          />
-          <img
-          width="300"
-          src="images/at-logo.png"
-          alt="Appalachian Trail Logo"
-        />
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pct.html">Pacific Crest Trail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ct.html">Continental Divide Trail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="at.html">Appalachian Trail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gear.html">Recommended Gear</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-nav d-flex justify-content-end">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newsletterModal">Subscribe</button>
+        </div>
       </div>
+    </nav>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="newsletterModalLabel">Subscribe to our Newsletter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="text-center my-5">
+      <h1 class="my-4 display-1 fs-1">Thru-Hiking: Triple Crown</h1>
+      <img class="img-fluid mx-auto d-block" src="images/Triple_crown_logo.png" alt="Triple Crown Logo">
     </header>
-    <!-- Horizontal Break to split up the Heading and Main content of the page -->
-    
 
     <main>
-      <section>
-        <h2>What is Thru-hiking?</h2>
-        <p>
-          Thru-hiking, or through-hiking, is the act of hiking an established
-          long-distance trail end-to-end continuously.
-        </p>
-        <p>
-          Completing a thru-hike is an exciting and challenging goal for many
-          outdoor adventurers. Spending months on a trail hiking thousands of
-          miles is an incredible and life-changing feat.
-        </p>
-        <p>
-          here are three main thru-hiking trails in the United States that
-          long-distance hikers dream about: the
-          <strong><a href="at.html">Appalachian Trail (AT)</a></strong> in the
-          East, the
-          <strong><a href="ct.html">Continental Divide Trail (CDT)</a></strong>
-          in the Mountain West, and the
-          <strong><a href="pct.html">Pacific Crest Trail (PCT)</a></strong> in
-          the West.
-        </p>
+      <section class="container-fluid py-5">
+        <div class="row mb-5 ms-lg-2">
+          <div class="col-lg-8">
+            <div class="card">
+              <h2 class="card-header fs-2 text-center text-lg-start">What is Thru-hiking?</h2>
+              <div class="card-body">
+                <p class="card-text">
+                  Thru-hiking, or through-hiking, is the act of hiking an established
+                  long-distance trail, generally 500+ mi, end-to-end continuously.
+                </p>
+                <p class="card-text">
+                  Completing a thru-hike is an exciting and challenging goal for many
+                  outdoor adventurers. Spending months on a trail hiking thousands of
+                  miles is an incredible and life-changing feat.
+                </p>
+                <p class="card-text">
+                  here are three main thru-hiking trails in the United States that
+                  long-distance hikers dream about: the Appalachian Trail (AT) in the East, 
+                  the Continental Divide Trail (CDT) in the Mountain West, and the
+                  Pacific Crest Trail (PCT) in the West.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row me-lg-2 justify-content-md-end">
+          <div class="col-lg-8">
+            <div class="card">
+              <h2 class="card-header fs-2 text-center text-lg-start">What is the Triple Crown of Thru-hiking?</h2>
+              <div class="card-body">
+                <p class="card-text">
+                  The Triple Crown of Thru-Hiking refers to completing the
+                  <strong>Appalachian Trail</strong>, the
+                  <strong>Continental Divide Trail</strong>, and the
+                  <strong>Pacific Crest Trail</strong>. The special hikers who finish
+                  all three big trails are referred to as a Triple Crowner. It takes a
+                  lot of time, planning, and fortitude to be successful in this special
+                  undertaking—a total of 7,700+ miles.
+                  <p class="card-text">
+                    These three trails were the first designated National Scenic Trails in the National Trails System. Their total length is about 7,875 miles (12,674 km); vertical gain is more than 1,000,000 feet (300,000 m). A total of 22 states are visited if the three trails are completed. The American Long Distance Hiking Association – West (ALDHA–West) is the only organization that recognizes this hiking feat. At the ALDHA–West gathering, held each fall, the Triple Crown honorees are recognized and awarded plaques noting their achievement. As of the end of the application period in 2023, 665 hikers have been designated Triple Crowners by ALDHA-West since 1994.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <section>
-        <h2>What is the Triple Crown of Thru-hiking?</h2>
-        <p>
-          The Triple Crown of Thru-Hiking refers to completing the
-          <strong>Appalachian Trail</strong>, the
-          <strong>Continental Divide Trail</strong>, and the
-          <strong>Pacific Crest Trail</strong>. The special hikers who finish
-          all three big trails are referred to as a Triple Crowner. It takes a
-          lot of time, planning, and fortitude to be successful in this special
-          undertaking—a total of 7,700+ miles.
-        </p>
-      </section>
-      <section>
-        <h2>Triple Crown Trail Information</h2>
-        <!-- Although the <table> border and cellpadding attributes are depricated, I've decided to use it here for better clarity without the use of CSS -->
-        <div id="table-container">
-          <table>
-            <!-- Define Table column Headers -->
+        <h2 class="text-center my-5">Triple Crown Trail Information</h2>
+        <div class="container table-responsive">
+          <table class="table align-middle">
             <thead>
-              <!-- All headers are inside a single row -->
               <tr>
                 <th scope="col">Name</th>
-                <th scope="col">Route Image</th>
-                <th scope="col">States on Route</th>
+                <th scope="col">Route</th>
+                <th scope="col" colspan="2" class="text-center">States</th>
                 <th scope="col">Length</th>
               </tr>
             </thead>
-            <!-- Define the body of the table, each row having data for each corresponding header -->
             <tbody>
               <tr>
-                <!-- I've used a table header for bold text, as the name of the trail is important and all data in this row relates to it -->
                 <th scope="row">Pacific Crest Trail</th>
                 <td>
-                  <img
-                    src="images/Map_of_Pacific_Crest_Trail.png"
-                    alt="Map of the Pacific Crest Trail"
-                    width="200"
-                  />
+                  <img class="height-200 width-300" src="images/Map_of_Pacific_Crest_Trail.png" alt="PCT Trail Map">
                 </td>
-                <td class="td-states">
-                  California 
-                  Oregon 
-                  Washington
+                <td colspan="2">
+                  <span class="d-block">California</span>
+                  <span class="d-block">Oregon</span>
+                  <span class="d-block">Washington</span>
                 </td>
-                <td>2,650 mi 4,260 km</td>
+                <td>
+                  <span class="d-block">2,650 mi</span>
+                  <span class="d-block">4,260 km</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">Continental Divide Trail</th>
                 <td>
-                  <img
-                    src="images/Map_of_Continental_Divide_Trail.png"
-                    alt="Map of the Continental Divide Trail"
-                    width="200"
-                  />
+                  <img class="height-200 width-300" src="images/Map_of_Continental_Divide_Trail.png" alt="CDT Trail Map">
                 </td>
-                <td class="td-states">
-                  New Mexico 
-                  Colorado Wyoming 
-                  Idaho 
-                  Montana
+                <td colspan="2">
+                  <span class="d-block">New Mexico</span>
+                  <span class="d-block">Colorado</span>
+                  <span class="d-block">Wyoming</span>
+                  <span class="d-block">Idaho</span>
+                  <span class="d-block">Montana</span>
                 </td>
-                <td>3,200 mi 5,150 km</td>
+                <td>
+                  <span class="d-block">3,200 mi</span>
+                  <span class="d-block">5,150 km</span>
+                </td>
               </tr>
               <tr>
                 <th scope="row">Appalachian Trail</th>
                 <td>
-                  <img
-                    src="images/Map_of_Appalachian_Trail.png"
-                    alt="Map of the Appalachian Trail"
-                    width="200"
-                  />
+                  <img class="height-200 width-300" src="images/Map_of_Appalachian_Trail.png" alt="AT Trail Map">
                 </td>
-                <td class="td-states">
-                  Georgia 
-                  North Carolina 
-                  Tennessee 
-                  Virginia 
-                  West Virginia 
-                  Maryland
-                  Pennsylvania
-                  New Jersey 
-                  New York 
-                  Connecticut 
-                  Massachusetts
-                  Vermont 
-                  New Hampshire 
-                  Maine
+                <td>
+                  <span class="d-block">Georgia</span>
+                  <span class="d-block">North Carolina</span>
+                  <span class="d-block">Tennessee</span>
+                  <span class="d-block">Virginia</span>
+                  <span class="d-block">West Virginia</span>
+                  <span class="d-block">Maryland</span>
+                  <span class="d-block">Pennsylvania</span>
                 </td>
-                <td>2,189 mi 3,520 km</td>
+                <td>
+                  <span class="d-block">New Jersey</span>
+                  <span class="d-block">New York</span>
+                  <span class="d-block">Connecticut</span>
+                  <span class="d-block">Massachusetts</span>
+                  <span class="d-block">Vermont</span>
+                  <span class="d-block">New Hampshire</span>
+                  <span class="d-block">Maine</span>
+                </td>
+
+                </td>
+                <td>
+                  <span class="d-block">2,189 mi</span>
+                  <span class="d-block">3,520 km</span>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
-
-      <!-- Horizontal Break to split up the Main content from Newsletter form -->
-      
-      <!-- added id to newsletter section for newsletter link in nav -->
-      <section id="newsletter">
-        <h2>Subscribe to our Newsletter</h2>
-        <form action="" name="newsletter">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" />
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" />
-          <input type="submit" id="submit" />
-        </form>
-
-        <!-- #top refers to nav element at the top of the page -->
-        <a id="link-to-top" href="#top">Back to top</a>
-      </section>
     </main>
-    <!-- Horizontal Break to split up the newsletter form from Footer -->
     
 
     <footer>
