@@ -5,3 +5,8 @@
 .width-300 {
     width: 300px;
 }
+
+.footer-text p {
+    margin: 0;
+    font-size: 0.75rem;
+}
