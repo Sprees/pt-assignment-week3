@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gear List</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
   </head>
   <body>
@@ -32,8 +33,36 @@
             </li>
           </ul>
         </div>
+        <div class="navbar-nav d-flex justify-content-end">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newsletterModal">Subscribe</button>
+        </div>
       </div>
     </nav>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="newsletterModalLabel">Subscribe to our Newsletter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Horizontal Break to split up the Navigation and Heading of the page -->
     
@@ -168,46 +197,75 @@
           <li>Know where you're getting water each day!</li>
         </ul>
       </section>
-
-      
-      <section id="newsletter">
-        <h2>Subscribe to our Newsletter</h2>
-        <form action="" name="newsletter">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" />
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" />
-          <input type="submit" id="submit"/>
-        </form>
-
-        <a id="link-to-top" href="#top">Back to top</a>
-      </section>
     </main>
-    <!-- Horizontal Break to split up the Main content of the page from Footer -->
-    
 
-    <footer>
-      <p>Content Credit:</p>
-      <a href="https://en.wikipedia.org/wiki/Continental_Divide_Trail"
-        >Wikipedia: Continental Divide Trail</a
-      >
-
-      <a href="https://en.wikipedia.org/wiki/Appalachian_Trail"
-        >Wikipedia: Appalachian Trail</a
-      >
-
-      <a href="https://en.wikipedia.org/wiki/Pacific_Crest_Trail"
-        >Wikipedia: Pacific Crest Trail</a
-      >
-
-      <a href="https://en.wikipedia.org/wiki/Triple_Crown_of_Hiking"
-        >Wikipedia: Triple Crown of Hiking</a
-      >
-
-      <a
-        href="https://www.rei.com/learn/expert-advice/backpacking-checklist.html"
-        >REI: Backpacking Checklist</a
-      >
-    </footer>
+    <footer class="bg-light py-4 ps-2 mt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col text-md-start">
+            <p class="mb-1">Links</p>
+            <div class="footer-text">
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="index.html">Home</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="pct.html">Pacific Crest Trail</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="ct.html">Continental Divide Trail</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="at.html">Appalachian Trail</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="gear.html">Recommended Gear</a>
+              </p>
+            </div>
+          </div>
+          <div class="col text-md-center">
+            <p class="mb-1">Content Credit:</p>
+            <div class="footer-text">
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Continental_Divide_Trail"
+                  >Wikipedia: Continental Divide Trail</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Appalachian_Trail"
+                  >Wikipedia: Appalachian Trail</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Pacific_Crest_Trail"
+                  >Wikipedia: Pacific Crest Trail</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Triple_Crown_of_Hiking"
+                  >Wikipedia: Triple Crown of Hiking</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.rei.com/learn/expert-advice/backpacking-checklist.html"
+                  >REI: Backpacking Checklist</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col text-md-end">
+            <p class="mb-1">Promineo Tech</p>
+            <div class="footer-text">
+              <p>Bootstrap Coding Project </p>
+              <p>Created by Alex Minnick</p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="">
+                  https://github.com/Sprees
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>    
   </body>
 </html>

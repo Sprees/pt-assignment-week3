@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Appalachian Trail</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
   </head>
   <body>
@@ -33,150 +34,210 @@
             </li>
           </ul>
         </div>
+        <div class="navbar-nav d-flex justify-content-end">
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newsletterModal">Subscribe</button>
+        </div>
       </div>
     </nav>
 
-    <header>
-      <h1>Appalachian Trail</h1>
-      <div class="header-images">
-          <img
-          src="images/AT_Annapolis_rocks_overlook.jpg"
-          alt="AT Annapolis rocks overlook"
-          height="300"
-          />
-          <img
-            src="images/at-logo.png"
-            alt="Appalachian Trail Logo"
-            height="300"
-          />
-        <img
-          src="images/AT_Totts_Gap_to_Mount_Minsi.jpg"
-          alt="AT Totts Gap to Mount Minsi"
-          height="300"
-        />
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="newsletterModalLabel">Subscribe to our Newsletter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <header class="text-center my-5">
+      <h1 class="my-4 display-1 fs-1">Appalachian Trail</h1>
+      <img class="object-fit-scale img-fluid mx-auto d-block logo-image" src="images/at-logo.png" alt="Appalachian Trail Logo">
     </header>
 
-    <main>
-
-      <section>
-        <h2>About the Appalachian Trail</h2>
-        <p>
-          The Appalachian Trail, also called the A.T., is a hiking trail in the
-          Eastern United States, extending almost 2,200 miles (3,540 km) between
-          Springer Mountain in Georgia and Mount Katahdin in Maine, and passing
-          through 14 states. The Appalachian Trail Conservancy claims the
-          Appalachian Trail to be the world's longest hiking-only trail. More
-          than three million people hike segments of it each year.
-        </p>
-        <p>
-          The trail was first proposed in 1921 and completed in 1937.
-          Improvements and changes have continued since then. It became the
-          Appalachian National Scenic Trail under the National Trails System Act
-          of 1968.
-        </p>
-        <p>
-          Thru-hikers walk the entire trail in a single season. The number of
-          thru-hikes per year has increased steadily since 2010, with 715
-          northbound and 133 southbound thru-hikes reported in 2017. The
-          Appalachian Trail Conservancy estimates there are over 3,000 attempts
-          to traverse the entire trail each year, about 25% of which succeed.
-          Many books, documentaries, and websites are dedicated to the pursuit.
-          Some hike from one end to the other, then turn around and thru-hike
-          the other way, a "yo-yo".
-        </p>
+    <main class="container-fluid py-5">
+      <section class="row py-5 ps-lg-4 bg-light">
+        <div class="col-lg-8">
+          <div class="card mb-3 rounded">
+            <img class="img-fluid object-fit-scale rounded-top card-img-top" src="images/AT_Annapolis_rocks_overlook.jpg" alt="Annapolis Rocks Overlook">
+            <div class="card-body">
+              <h2 class="card-title fs-2 text-center text-lg-start pb-4">About the Appalachian Trail</h2>
+              <p class="card-text">
+                The Appalachian Trail, also called the A.T., is a hiking trail in the
+                Eastern United States, extending almost 2,200 miles (3,540 km) between
+                Springer Mountain in Georgia and Mount Katahdin in Maine, and passing
+                through 14 states. The Appalachian Trail Conservancy claims the
+                Appalachian Trail to be the world's longest hiking-only trail. More
+                than three million people hike segments of it each year.
+              </p>
+              <p class="card-text">
+                The trail was first proposed in 1921 and completed in 1937.
+                Improvements and changes have continued since then. It became the
+                Appalachian National Scenic Trail under the National Trails System Act
+                of 1968.
+              </p>
+              <p class="card-text">
+                Thru-hikers walk the entire trail in a single season. The number of
+                thru-hikes per year has increased steadily since 2010, with 715
+                northbound and 133 southbound thru-hikes reported in 2017. The
+                Appalachian Trail Conservancy estimates there are over 3,000 attempts
+                to traverse the entire trail each year, about 25% of which succeed.
+                Many books, documentaries, and websites are dedicated to the pursuit.
+                Some hike from one end to the other, then turn around and thru-hike
+                the other way, a "yo-yo".
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-
-      <section>
-        <h2>Hiking the Appalacian Trail</h2>
-        <p>
-          Throughout its length, the AT is marked by white paint blazes that are
-          2 by 6 inches (5 by 15 cm). Side trails to shelters, viewpoints and
-          parking areas use similarly shaped blue blazes. In past years, some
-          sections of the trail also used metal diamond markers with the AT
-          logo.
-        </p>
-        <p>
-          Most hikers carry a lightweight tent, tent hammock or tarp. The trail
-          has more than 250 shelters and campsites available for hikers. The
-          shelters, sometimes called lean-tos (in Maine, Massachusetts, and
-          Connecticut), huts (in Shenandoah National Park), or Adirondack
-          shelters, are generally open, three-walled structures with a wooden
-          floor, although some shelters are much more complex in structure.
-          Shelters are usually spaced a day's hike or less apart, most often
-          near a water source (which may be dry) and with a privy. They
-          generally have spaces for tent sites in the vicinity as the shelters
-          may be full. The Appalachian Mountain Club (AMC) operates a system of
-          eight huts along 56 miles (90 km) of New Hampshire's White Mountains.
-          These huts are significantly larger than standard trail shelters and
-          offer full-service lodging and meals during the summer months. The
-          Fontana Dam Shelter in North Carolina is more commonly referred to as
-          the Fontana Hilton because of amenities (e.g. flushable toilets) and
-          its proximity to an all-you-can-eat buffet and post office. Several
-          AMC huts have an extended self-service season during the fall, with
-          two extending self-service seasons through the winter and spring. The
-          Potomac Appalachian Trail Club maintains trail cabins, shelters, and
-          huts throughout the Shenandoah region of Virginia.
-        </p>
-        <p>
-          Trail hikers who attempt to complete the entire trail in a single
-          season are called "thru-hikers"; those who traverse the trail during a
-          series of separate trips are known as "section-hikers". Rugged
-          terrain, weather extremes, illness, injury, and the time and effort
-          required make thru-hiking difficult to accomplish. As of 2017, the
-          Appalachian Trail Conservancy estimated that 3,839 hikers set out from
-          Springer Mountain, northbound, 497 from Mount Katahdin, southbound,
-          and reported 1,186 completions of hiking the entire trail, which
-          includes those by both section and through hikers.
-        </p>
-        <p>
-          Most thru-hikers walk northward from Georgia to Maine, and generally
-          start out in early spring and follow the warm weather as it moves
-          north. These "north-bounders" are also called NOBO (NOrthBOund) or
-          GAME (Georgia(GA)-to-Maine(ME)), while those heading in the opposite
-          direction are termed "south-bounders" (also SOBO or MEGA).
-        </p>
-        <p>
-          A thru-hike generally requires five to seven months, although some
-          have done it in three months, and several trail runners have completed
-          the trail in less time. Trail runners typically tackle the AT with
-          automobile support teams, without backpacks, and without camping in
-          the woods.
-        </p>
-      </section>
-
-      <section id="newsletter">
-        <h2>Subscribe to our Newsletter</h2>
-        <form action="" name="newsletter">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" />
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" />
-          <input type="submit" id="submit"/>
-        </form>
-        <a id="link-to-top" href="#top">Back to top</a>
+      <section class="row pe-lg-4 justify-content-md-end py-5">
+        <div class="col-lg-8">
+          <div class="card rounded bg-light">
+            <img class="img-fluid object-fit-scale rounded-top" src="images/AT_Totts_Gap_to_Mount_Minsi.jpg" alt="Totts Gap to Mount Minsi">
+            <div class="card-body">
+              <h2 class="card-title fs-2 text-center text-lg-start pb-4">Hiking the Appalacian Trail</h2>
+              <p class="card-text">
+                Throughout its length, the AT is marked by white paint blazes that are
+                2 by 6 inches (5 by 15 cm). Side trails to shelters, viewpoints and
+                parking areas use similarly shaped blue blazes. In past years, some
+                sections of the trail also used metal diamond markers with the AT
+                logo.
+              </p>
+              <p class="card-text">
+                Most hikers carry a lightweight tent, tent hammock or tarp. The trail
+                has more than 250 shelters and campsites available for hikers. The
+                shelters, sometimes called lean-tos (in Maine, Massachusetts, and
+                Connecticut), huts (in Shenandoah National Park), or Adirondack
+                shelters, are generally open, three-walled structures with a wooden
+                floor, although some shelters are much more complex in structure.
+                Shelters are usually spaced a day's hike or less apart, most often
+                near a water source (which may be dry) and with a privy. They
+                generally have spaces for tent sites in the vicinity as the shelters
+                may be full. The Appalachian Mountain Club (AMC) operates a system of
+                eight huts along 56 miles (90 km) of New Hampshire's White Mountains.
+                These huts are significantly larger than standard trail shelters and
+                offer full-service lodging and meals during the summer months. The
+                Fontana Dam Shelter in North Carolina is more commonly referred to as
+                the Fontana Hilton because of amenities (e.g. flushable toilets) and
+                its proximity to an all-you-can-eat buffet and post office. Several
+                AMC huts have an extended self-service season during the fall, with
+                two extending self-service seasons through the winter and spring. The
+                Potomac Appalachian Trail Club maintains trail cabins, shelters, and
+                huts throughout the Shenandoah region of Virginia.
+              </p>
+              <p class="card-text">
+                Trail hikers who attempt to complete the entire trail in a single
+                season are called "thru-hikers"; those who traverse the trail during a
+                series of separate trips are known as "section-hikers". Rugged
+                terrain, weather extremes, illness, injury, and the time and effort
+                required make thru-hiking difficult to accomplish. As of 2017, the
+                Appalachian Trail Conservancy estimated that 3,839 hikers set out from
+                Springer Mountain, northbound, 497 from Mount Katahdin, southbound,
+                and reported 1,186 completions of hiking the entire trail, which
+                includes those by both section and through hikers.
+              </p>
+              <p class="card-text">
+                Most thru-hikers walk northward from Georgia to Maine, and generally
+                start out in early spring and follow the warm weather as it moves
+                north. These "north-bounders" are also called NOBO (NOrthBOund) or
+                GAME (Georgia(GA)-to-Maine(ME)), while those heading in the opposite
+                direction are termed "south-bounders" (also SOBO or MEGA).
+              </p>
+              <p class="card-text">
+                A thru-hike generally requires five to seven months, although some
+                have done it in three months, and several trail runners have completed
+                the trail in less time. Trail runners typically tackle the AT with
+                automobile support teams, without backpacks, and without camping in
+                the woods.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Content Credit:</p>
-      <a href="https://en.wikipedia.org/wiki/Continental_Divide_Trail"
-        >Wikipedia: Continental Divide Trail</a
-      >
-      <a href="https://en.wikipedia.org/wiki/Appalachian_Trail"
-        >Wikipedia: Appalachian Trail</a
-      >
-      <a href="https://en.wikipedia.org/wiki/Pacific_Crest_Trail"
-        >Wikipedia: Pacific Crest Trail</a
-      >
-      <a href="https://en.wikipedia.org/wiki/Triple_Crown_of_Hiking"
-        >Wikipedia: Triple Crown of Hiking</a
-      >
-      <a
-        href="https://www.rei.com/learn/expert-advice/backpacking-checklist.html"
-        >REI: Backpacking Checklist</a
-      >
+    <footer class="bg-light py-4 ps-2">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col text-md-start">
+            <p class="mb-1">Links</p>
+            <div class="footer-text">
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="index.html">Home</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="pct.html">Pacific Crest Trail</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="ct.html">Continental Divide Trail</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="at.html">Appalachian Trail</a>
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="gear.html">Recommended Gear</a>
+              </p>
+            </div>
+          </div>
+          <div class="col text-md-center">
+            <p class="mb-1">Content Credit:</p>
+            <div class="footer-text">
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Continental_Divide_Trail"
+                  >Wikipedia: Continental Divide Trail</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Appalachian_Trail"
+                  >Wikipedia: Appalachian Trail</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Pacific_Crest_Trail"
+                  >Wikipedia: Pacific Crest Trail</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://en.wikipedia.org/wiki/Triple_Crown_of_Hiking"
+                  >Wikipedia: Triple Crown of Hiking</a
+                >
+              </p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.rei.com/learn/expert-advice/backpacking-checklist.html"
+                  >REI: Backpacking Checklist</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col text-md-end">
+            <p class="mb-1">Promineo Tech</p>
+            <div class="footer-text">
+              <p>Bootstrap Coding Project </p>
+              <p>Created by Alex Minnick</p>
+              <p>
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="">
+                  https://github.com/Sprees
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-
   </body>
 </html>

@@ -1,12 +1,17 @@
-.height-200 {
-    height: 200px;
-}
-
-.width-300 {
-    width: 300px;
+.table-image {
+    height: 12rem;
+    width: 19rem;
 }
 
 .footer-text p {
     margin: 0;
     font-size: 0.75rem;
+}
+
+.logo-image {
+    height: 25rem;
+}
+
+.section-image {
+    height: 35rem;
 }
