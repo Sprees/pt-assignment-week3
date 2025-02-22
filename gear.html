@@ -63,143 +63,162 @@
         </div>
       </div>
     </div>
-
-    <!-- Horizontal Break to split up the Navigation and Heading of the page -->
     
-    <header>
-      <h1>Recommended Gear</h1>
-      <div class="header-images">
-        <img src="images/ea_icons_backpack.webp" alt="Picture of backpack" height="200">
-        <img src="images/ea_icons_vest.avif" alt="Picture of vest" height="200">
-        <img src="images/ea_icons_water_bottle.webp" alt="Picture of water bottle" height="200">
-      </div>
+    <header class="text-center my-5">
+      <h1 class="my-4 display-1 fs-1">Recommended Gear</h1>
+      <img class="object-fit-scale img-fluid mx-auto d-block logo-image" src="images/backpacking-gear-laid-out.png" alt="Image of Backpacking Gear">
     </header>
+
     <main>
-      <section>
-        <h2>
-          <img src="images/ea_icons_backpack.webp" alt="" height="25" />
-          Equipment
-        </h2>
-        <ul>
-          <li>Backpack</li>
-          <li>Pack raincover</li>
-          <li>Tent</li>
-          <li>Tent footprint (optional)</li>
-          <li>Sleeping bag</li>
-          <li>Sleeping pad</li>
-          <li>Stuff sacks</li>
-          <li>Ankle-high gaiters (optional)</li>
-          <li>Watch (optional)</li>
-          <li>Knife or multitool</li>
-          <li>Compass</li>
-          <li>GPS (optional)</li>
-          <li>Maps or guidebooks</li>
-          <li>Trekking poles (optional)</li>
-          <li>Headlamp</li>
-          <li>Water treatment system</li>
-          <li>Stove</li>
-          <li>Lighter</li>
-          <li>Cooking pot and utensils</li>
-          <li>Nylon cord</li>
-          <li>Patch kit or duct tape for repairs</li>
-          <li>Fire starter</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>
-          <img src="images/ea_icons_vest.avif" alt="" height="25" />
-          Clothing and Footwear
-        </h2>
-        <ul>
-          <li>Wicking, quick-drying underwear</li>
-          <li>Wicking, quick-drying long underwear</li>
-          <li>Wicking, quick-drying T-shirt and long-sleeve shirt</li>
-          <li>Quick-drying pants</li>
-          <li>Quick-drying shorts (optional)</li>
-          <li>Fleece jacket or vest, or insulated jacket or vest</li>
-          <li>Fleece pants (optional)</li>
-          <li>Waterproof/breathable rain jacket suitable for the conditions</li>
-          <li>Waterproof/breathable rain pants suitable for the conditions</li>
-          <li>Bandana or Buff</li>
-          <li>Sun-shielding hat or ball cap</li>
-          <li>Winter hat</li>
-          <li>Gloves or mittens</li>
-          <li>Hiking boots or hiking shoes suited to terrain</li>
-          <li>Socks (synthetic or wool) plus spares</li>
-          <li>
-            Sandals (for fording streams and relaxing in camp) or water shoes
-          </li>
-          <li>Swimwear (optional)</li>
-          <li>Blaze-orange hat or vest (in hunting season)</li>
-          <li>Wicking, quick-drying sports bra</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>
-          <img src="images/ea_icons_pens.webp" alt="" height="25" />
-          Personal Items
-        </h2>
-        <ul>
-          <li>Sunglasses</li>
-          <li>
-            Water bottles or hydration reservoirs (3 liters total capacity)
-          </li>
-          <li>Sunscreen</li>
-          <li>Lip balm</li>
-          <li>Toothbrush with cover and biodegradable toothpaste</li>
-          <li>Biodegradable soap</li>
-          <li>Toilet paper</li>
-          <li>Sanitation trowel</li>
-          <li>Hand sanitizer</li>
-          <li>Women’s hygiene items</li>
-          <li>Personal wipes</li>
-          <li>Spare eyeglasses or contact lenses</li>
-          <li>Medications</li>
-          <li>Plastic zip-top bags</li>
-          <li>Insect repellent (effective against ticks)</li>
-          <li>Tick-removal tool (optional)</li>
-          <li>Bear spray (optional)</li>
-          <li>First-aid kit (see our First-Aid Checklist)</li>
-          <li>Quick-drying towel</li>
-          <li>Camera or video cam and extra memory cards (optional)</li>
-          <li>Binoculars (optional)</li>
-          <li>Cell phone (don’t rely on service)</li>
-          <li>Satellite communicator / personal locator beacon (optional)</li>
-          <li>Field guide(s); star identifier (optional)</li>
-          <li>Journal, pen and e-reader or reading material (optional)</li>
-          <li>Fishing gear and permit(s) (optional)</li>
-          <li>Credit card; cash for layover days and camping fees</li>
-          <li>
-            National park AT permits, plus camping reservations for your
-            itinerary
-          </li>
-          <li>Trip itinerary left with friend</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>
-          <img src="images/ea_icons_water_bottle.webp" alt="" height="25" />
-          Food and Water
-        </h2>
-        <p id="food-note">6,000 calories per day in these categories:</p>
-        <ul>
-          <li>Breakfast (oatmeal, granola, freeze-dried breakfast, etc.)</li>
-          <li>Lunch (bagels, summer sausage, cheese, smoked salmon, etc.)</li>
-          <li>Dinner (pasta, couscous, rice, freeze-dried dinner, etc.)</li>
-          <li>Snacks (cookies, GORP, jerky, candy bars, dried fruit, etc.)</li>
-          <li>Energy gels</li>
-          <li>Energy bars</li>
-          <li>Electrolyte replacement drink mix</li>
-          <li>Extra day’s supply of food (carried on each leg of the hike)</li>
-          <li>Know where you're getting water each day!</li>
-        </ul>
+      <ul class="nav nav-pills mb-3 justify-content-center flex-column flex-md-row" id="gearTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="equipment-tab" data-bs-toggle="tab" data-bs-target="#equipment-tab-pane" type="button" role="tab" aria-controls="equipment-tab-pane" aria-selected="true">Equipment</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="clothing-tab" data-bs-toggle="tab" data-bs-target="#clothing-tab-pane" type="button" role="tab" aria-controls="clothing-tab-pane" aria-selected="false">Clothing and Footwear</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="personal-items-tab" data-bs-toggle="tab" data-bs-target="#personal-items-tab-pane" type="button" role="tab" aria-controls="personal-items-tab-pane" aria-selected="false">Personal Items</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="food-items-tab" data-bs-toggle="tab" data-bs-target="#food-tab-pane" type="button" role="tab" aria-controls="food-tab-pane" aria-selected="false">Food and Water</button>
+        </li>
+      </ul>
+      <section class="bg-light py-5">
+        <div class="tab-content" id="gearTabsContent">
+          <div class="tab-pane fade show active" id="equipment-tab-pane" role="tabpanel" aria-labelledby="equipment-tab" tabindex="0">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="ps-4 pb-2">
+                  <img class="tab-image" src="images/ea_icons_backpack.webp" alt="Image of a Backpack">
+                  Equipment
+                </h2>
+                <ul class="ms-md-4 list-group list-group-flush border rounded">
+                  <li class="list-group-item">Backpack</li>
+                  <li class="list-group-item">Pack raincover</li>
+                  <li class="list-group-item">Tent</li>
+                  <li class="list-group-item">Tent footprint (optional)</li>
+                  <li class="list-group-item">Sleeping bag</li>
+                  <li class="list-group-item">Sleeping pad</li>
+                  <li class="list-group-item">Stuff sacks</li>
+                  <li class="list-group-item">Ankle-high gaiters (optional)</li>
+                  <li class="list-group-item">Watch (optional)</li>
+                  <li class="list-group-item">Knife or multitool</li>
+                  <li class="list-group-item">Compass</li>
+                  <li class="list-group-item">GPS (optional)</li>
+                  <li class="list-group-item">Maps or guidebooks</li>
+                  <li class="list-group-item">Trekking poles (optional)</li>
+                  <li class="list-group-item">Headlamp</li>
+                  <li class="list-group-item">Water treatment system</li>
+                  <li class="list-group-item">Stove</li>
+                  <li class="list-group-item">Lighter</li>
+                  <li class="list-group-item">Cooking pot and utensils</li>
+                  <li class="list-group-item">Nylon cord</li>
+                  <li class="list-group-item">Patch kit or duct tape for repairs</li>
+                  <li class="list-group-item">Fire starter</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="clothing-tab-pane" role="tabpanel" aria-labelledby="clothing-tab" tabindex="0">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="ps-4 pb-2">
+                  <img class="tab-image" src="images/ea_icons_vest.avif" alt="Image of a Vest">
+                  Clothing and Footwear
+                </h2>
+                <ul class="ms-md-4 list-group list-group-flush border rounded">
+                  <li class="list-group-item">Wicking, quick-drying underwear</li>
+                  <li class="list-group-item">Wicking, quick-drying long underwear</li>
+                  <li class="list-group-item">Wicking, quick-drying T-shirt and long-sleeve shirt</li>
+                  <li class="list-group-item">Quick-drying pants</li>
+                  <li class="list-group-item">Quick-drying shorts (optional)</li>
+                  <li class="list-group-item">Fleece jacket or vest, or insulated jacket or vest</li>
+                  <li class="list-group-item">Fleece pants (optional)</li>
+                  <li class="list-group-item">Waterproof/breathable rain jacket suitable for the conditions</li>
+                  <li class="list-group-item">Waterproof/breathable rain pants suitable for the conditions</li>
+                  <li class="list-group-item">Bandana or Buff</li>
+                  <li class="list-group-item">Sun-shielding hat or ball cap</li>
+                  <li class="list-group-item">Winter hat</li>
+                  <li class="list-group-item">Gloves or mittens</li>
+                  <li class="list-group-item">Hiking boots or hiking shoes suited to terrain</li>
+                  <li class="list-group-item">Socks (synthetic or wool) plus spares</li>
+                  <li class="list-group-item">Sandals (for fording streams and relaxing in camp) or water shoes</li>
+                  <li class="list-group-item">Swimwear (optional)</li>
+                  <li class="list-group-item">Blaze-orange hat or vest (in hunting season)</li>
+                  <li class="list-group-item">Wicking, quick-drying sports bra</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="personal-items-tab-pane" role="tabpanel" aria-labelledby="personal-items-tab" tabindex="0">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="ps-4 pb-2">
+                  <img class="tab-image" src="images/ea_icons_pens.webp" alt="Image of a Pen">
+                  Personal Items
+                </h2>
+                <ul class="ms-md-4 list-group list-group-flush border rounded">
+                  <li class="list-group-item">Sunglasses</li>
+                  <li class="list-group-item">Water bottles or hydration reservoirs (3 liters total capacity)</li>
+                  <li class="list-group-item">Sunscreen</li>
+                  <li class="list-group-item">Lip balm</li>
+                  <li class="list-group-item">Toothbrush with cover and biodegradable toothpaste</li>
+                  <li class="list-group-item">Biodegradable soap</li>
+                  <li class="list-group-item">Toilet paper</li>
+                  <li class="list-group-item">Sanitation trowel</li>
+                  <li class="list-group-item">Hand sanitizer</li>
+                  <li class="list-group-item">Women’s hygiene items</li>
+                  <li class="list-group-item">Personal wipes</li>
+                  <li class="list-group-item">Spare eyeglasses or contact lenses</li>
+                  <li class="list-group-item">Medications</li>
+                  <li class="list-group-item">Plastic zip-top bags</li>
+                  <li class="list-group-item">Insect repellent (effective against ticks)</li>
+                  <li class="list-group-item">Tick-removal tool (optional)</li>
+                  <li class="list-group-item">Bear spray (optional)</li>
+                  <li class="list-group-item">First-aid kit (see our First-Aid Checklist)</li>
+                  <li class="list-group-item">Quick-drying towel</li>
+                  <li class="list-group-item">Camera or video cam and extra memory cards (optional)</li>
+                  <li class="list-group-item">Binoculars (optional)</li>
+                  <li class="list-group-item">Cell phone (don’t rely on service)</li>
+                  <li class="list-group-item">Satellite communicator / personal locator beacon (optional)</li>
+                  <li class="list-group-item">Field guide(s); star identifier (optional)</li>
+                  <li class="list-group-item">Journal, pen and e-reader or reading material (optional)</li>
+                  <li class="list-group-item">Fishing gear and permit(s) (optional)</li>
+                  <li class="list-group-item">Credit card; cash for layover days and camping fees</li>
+                  <li class="list-group-item">National park AT permits, plus camping reservations for your itinerary</li>
+                  <li class="list-group-item">Trip itinerary left with friend</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="food-tab-pane" role="tabpanel" aria-labelledby="food-tab" tabindex="0">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="ps-4">
+                  <img class="tab-image" src="images/ea_icons_water_bottle.webp" alt="Image of a Water Bottle">
+                  Food and Water
+                </h2>
+                <p class="ps-4 pb-2">6,000 calories per day in these categories:</p>
+                <ul class="ms-md-4 list-group list-group-flush border rounded">
+                  <li class="list-group-item">Breakfast (oatmeal, granola, freeze-dried breakfast, etc.)</li>
+                  <li class="list-group-item">Lunch (bagels, summer sausage, cheese, smoked salmon, etc.)</li>
+                  <li class="list-group-item">Dinner (pasta, couscous, rice, freeze-dried dinner, etc.)</li>
+                  <li class="list-group-item">Snacks (cookies, GORP, jerky, candy bars, dried fruit, etc.)</li>
+                  <li class="list-group-item">Energy gels</li>
+                  <li class="list-group-item">Energy bars</li>
+                  <li class="list-group-item">Electrolyte replacement drink mix</li>
+                  <li class="list-group-item">Extra day’s supply of food (carried on each leg of the hike)</li>
+                  <li class="list-group-item">Know where you're getting water each day!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="bg-light py-4 ps-2 mt-5">
+    <footer class="py-4 ps-2">
       <div class="container">
         <div class="row gy-4">
           <div class="col text-md-start">
