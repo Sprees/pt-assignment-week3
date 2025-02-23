@@ -70,6 +70,8 @@
     </header>
 
     <main>
+      <!-- navbar tabs with pill styling justified to the center of the page -->
+       <!-- row display medium and above otherwise stacked -->
       <ul class="nav nav-pills mb-3 justify-content-center flex-column flex-md-row" id="gearTabs" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="equipment-tab" data-bs-toggle="tab" data-bs-target="#equipment-tab-pane" type="button" role="tab" aria-controls="equipment-tab-pane" aria-selected="true">Equipment</button>
@@ -84,15 +86,21 @@
           <button class="nav-link" id="food-items-tab" data-bs-toggle="tab" data-bs-target="#food-tab-pane" type="button" role="tab" aria-controls="food-tab-pane" aria-selected="false">Food and Water</button>
         </li>
       </ul>
+      <!-- provides background color for each of the different displays and padding -->
       <section class="bg-light py-5">
+        <!-- container for each display pane related to navbar button -->
         <div class="tab-content" id="gearTabsContent">
+          <!-- id connects this pane to the navbar pill button, to display this pane only -->
           <div class="tab-pane fade show active" id="equipment-tab-pane" role="tabpanel" aria-labelledby="equipment-tab" tabindex="0">
+            <!-- Bootstrap Grid -->
             <div class="row">
+              <!-- column uses half width medium and above -->
               <div class="col-md-6">
                 <h2 class="ps-4 pb-2">
                   <img class="tab-image" src="images/ea_icons_backpack.webp" alt="Image of a Backpack">
                   Equipment
                 </h2>
+                <!-- margin left medium and above -->
                 <ul class="ms-md-4 list-group list-group-flush border rounded">
                   <li class="list-group-item">Backpack</li>
                   <li class="list-group-item">Pack raincover</li>
@@ -120,6 +128,7 @@
               </div>
             </div>
           </div>
+          <!-- new pane -->
           <div class="tab-pane fade" id="clothing-tab-pane" role="tabpanel" aria-labelledby="clothing-tab" tabindex="0">
             <div class="row">
               <div class="col-md-6">
@@ -151,6 +160,7 @@
               </div>
             </div>
           </div>
+          <!-- new pane -->
           <div class="tab-pane fade" id="personal-items-tab-pane" role="tabpanel" aria-labelledby="personal-items-tab" tabindex="0">
             <div class="row">
               <div class="col-md-6">
@@ -192,6 +202,7 @@
               </div>
             </div>
           </div>
+          <!-- new pane -->
           <div class="tab-pane fade" id="food-tab-pane" role="tabpanel" aria-labelledby="food-tab" tabindex="0">
             <div class="row">
               <div class="col-md-6">
