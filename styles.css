@@ -1,11 +1,8 @@
+/* Mostly image height and width throughout website */
+
 .table-image {
     height: 12rem;
     width: 19rem;
-}
-
-.footer-text p {
-    margin: 0;
-    font-size: 0.75rem;
 }
 
 .logo-image {
@@ -16,10 +13,19 @@
     height: 35rem;
 }
 
-.nav-pills .nav-link {
-    color: black;
-}
-
 .tab-image {
     height: 2rem;
+}
+
+/* extra small font and removed margins for footer content */
+
+.footer-text p {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+/* Overwrite default bootstrap style for Navigation Pills */
+
+.nav-pills .nav-link {
+    color: black;
 }
